@@ -1,0 +1,233 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "overpass";
+    src: url("./fonts/Overpass-VariableFont_wght.ttf");
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.submit_card {
+    background-color: hsl(213, 19%, 18%);
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+    display: grid;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+
+}
+
+.submit_card>.star_icon {
+    background-color: hsl(213, 15%, 24%);
+    width: 45px;
+    height: 45px;
+    border: 2px solid;
+    border-style: none;
+    border-radius: 25px 25px;
+    padding: 15px;
+}
+
+.submit_card>h1 {
+    color: white;
+    font-family: overpass;
+    margin: 0px;
+
+}
+
+.submit_card>p {
+    width: 20rem;
+    color: hsl(217, 12%, 63%);
+    font-family: overpass;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+li {
+    background-color: hsl(213, 15%, 24%);
+    width: 45px;
+    height: 45px;
+    border: 2px solid;
+    border-style: none;
+    border-radius: 25px 25px;
+    padding: 13px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 15px;
+    font-family: overpass;
+    color: hsl(217, 12%, 63%);
+}
+
+.submit_card>button {
+    border-style: none;
+    border-radius: 30px;
+    font-family: overpass;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    letter-spacing: 2px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.submit_card>button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.ratings li:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+    cursor: pointer;
+}
+
+.thanks_card {
+    background-color: hsl(213, 19%, 18%);
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+    display: grid;
+    padding-top: 50px;
+    margin-bottom: 10px;
+
+}
+
+.thanks_card>img {
+    padding-left: 120px;
+}
+
+.thanks_card>.selection {
+    width: 200px;
+    background-color: hsl(213, 15%, 24%);
+    font-family: overpass;
+    color: hsl(25, 88%, 47%);
+    font-size: 14px;
+    font-weight: 200;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-family: overpass;
+    margin-top: 30px;
+}
+
+.appreciate {
+    color: hsl(217, 12%, 63%);
+    font-family: overpass;
+    font-size: 0.9rem;
+    text-align: center;
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-bottom: 0px;
+}
+
+.ratings li.selected {
+    background-color: hsl(25, 88%, 47%);
+    color: white;
+    cursor: pointer;
+}
+
+@media(max-width:450px) {
+    body{
+        height: 80vh;
+    }
+    .submit_card {
+        width: 18rem;
+        height: 22rem;
+        
+    }
+
+    .submit_card>.star_icon {
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+        padding-left: 25px;
+    }
+
+    .submit_card>p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 18rem;
+        font-size: 12px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-right: 3px;
+    }
+
+    button {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 10px;
+    }
+
+    .thanks_card {
+        width: 18rem;
+        height: 22rem;
+    }
+
+    .thanks_card>img {
+        padding-left: 60px;
+    }
+
+    .thanks_card>.selection {
+        margin-left: 50px;
+        margin-bottom: 0px;
+    }
+
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .appreciate {
+        width: 300px;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+
+
+}
